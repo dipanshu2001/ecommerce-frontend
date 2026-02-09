@@ -6,9 +6,8 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://simple-e-commerce-production.up.railway.app',
       changeOrigin: true,
-      pathRewrite: {
-        '^/api': '/api'  // Keep /api prefix
-      }
+      secure: false,
+      logLevel: 'debug'
     })
   );
 };
