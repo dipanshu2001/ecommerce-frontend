@@ -1,5 +1,6 @@
 // src/components/ItemForm.js
 import React, { useState, useEffect } from 'react';
+import './ItemForm.css';  // ✅ ADDED MISSING IMPORT
 
 const ItemForm = ({ onSave, editingItem, onCancel }) => {
   const [formData, setFormData] = useState({

@@ -1,5 +1,6 @@
 // src/components/ItemCard.js
 import React from 'react';
+import './ItemCard.css';  // ✅ ADDED MISSING IMPORT
 
 const ItemCard = ({ item, onEdit, onDelete }) => {
   return (
